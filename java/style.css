@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #ddd;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 0.1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating input:checked label {
+    color: #f90;
+}
